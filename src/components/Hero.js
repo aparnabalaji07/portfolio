@@ -1,7 +1,6 @@
 "use client";
 import Starfield from "@/components/Starfield";
 import Typewriter from "@/components/Typewriter";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -33,15 +32,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
-      <motion.a
-        href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted text-2xl hover:text-accent transition-colors cursor-pointer outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-full"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
-      >
-        ↓
-      </motion.a>
     </section>
   );
 }
