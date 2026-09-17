@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function DataBody({ detail }) {
   return (
     <dl className="mt-10 border-t border-white/10 font-mono text-sm max-w-2xl">
@@ -26,36 +28,98 @@ function HardwareBody({ detail }) {
         ))}
       </div>
       <p className="text-muted leading-relaxed mt-8 max-w-2xl">{detail.note}</p>
+
+      {detail.buildPhotos && (
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+          {detail.buildPhotos.map((photo) => (
+            <div key={photo.src} className="relative aspect-4/3">
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
+      {detail.cameraRoll && (
+        <div className="mt-10 max-w-2xl">
+          <p className="text-muted text-sm">
+            Photos actually taken by the camera, in order.
+          </p>
+          <div className="mt-4 flex flex-col sm:flex-row gap-4">
+            {detail.cameraRoll.map((shot) => (
+              <div key={shot.src} className="flex-1">
+                <div className="relative aspect-square">
+                  <Image
+                    src={shot.src}
+                    alt={shot.caption}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <p className="text-muted text-xs font-mono mt-2">
+                  {shot.caption}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </>
   );
 }
 
 function StepsBody({ detail }) {
   return (
-    <div className="mt-10 flex flex-col md:flex-row md:items-start gap-8 md:gap-0 max-w-2xl">
-      {detail.steps.map((step, i) => (
-        <div
-          key={step.label}
-          className={`flex-1 md:px-6 first:md:pl-0 ${
-            i > 0 ? "md:border-l md:border-white/10" : ""
-          }`}
-        >
-          <p className="font-mono text-accent text-xs">
-            {String(i + 1).padStart(2, "0")}
-          </p>
-          <p className="text-text font-medium mt-2">{step.label}</p>
-          <p className="text-muted text-sm mt-2 leading-relaxed">
-            {step.detail}
-          </p>
+    <>
+      {detail.screenshot && (
+        <div className="relative aspect-video mt-10 max-w-2xl">
+          <Image
+            src={detail.screenshot.src}
+            alt={detail.screenshot.alt}
+            fill
+            className="object-cover object-top"
+          />
         </div>
-      ))}
-    </div>
+      )}
+      <div className="mt-10 flex flex-col md:flex-row md:items-start gap-8 md:gap-0 max-w-2xl">
+        {detail.steps.map((step, i) => (
+          <div
+            key={step.label}
+            className={`flex-1 md:px-6 first:md:pl-0 ${
+              i > 0 ? "md:border-l md:border-white/10" : ""
+            }`}
+          >
+            <p className="font-mono text-accent text-xs">
+              {String(i + 1).padStart(2, "0")}
+            </p>
+            <p className="text-text font-medium mt-2">{step.label}</p>
+            <p className="text-muted text-sm mt-2 leading-relaxed">
+              {step.detail}
+            </p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
 function EditorialBody({ detail }) {
   return (
     <>
+      {detail.screenshot && (
+        <div className="relative aspect-video mt-10 max-w-2xl">
+          <Image
+            src={detail.screenshot.src}
+            alt={detail.screenshot.alt}
+            fill
+            className="object-cover"
+          />
+        </div>
+      )}
       <p className="text-muted leading-relaxed mt-8 max-w-2xl">{detail.role}</p>
       <p className="text-text border-l-2 border-accent pl-4 mt-6 max-w-xl">
         {detail.outcome}

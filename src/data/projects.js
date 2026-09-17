@@ -64,6 +64,10 @@ export const projects = [
           detail: "A written bio comes back in the React frontend, ready to copy into a listing.",
         },
       ],
+      screenshot: {
+        src: "/images/projects/AdoptionBioGenerator.png",
+        alt: "The Adoption Bio Generator form, with fields for name, species, age, and notes",
+      },
     },
   },
   {
@@ -87,6 +91,30 @@ export const projects = [
         { label: "Firmware", value: "C++, Arduino framework" },
       ],
       note: "The firmware handles triggering the sensor, capturing multiple photos in a session, and writing each one to the SD card without corrupting earlier files.",
+      buildPhotos: [
+        {
+          src: "/images/projects/AparnaSoldering.JPG",
+          alt: "Soldering a component onto a small circuit board",
+        },
+        {
+          src: "/images/projects/ESP32FirstIteration.JPG",
+          alt: "The ESP32-CAM module wired up on a breadboard",
+        },
+      ],
+      cameraRoll: [
+        {
+          src: "/images/projects/FirstPictureTakenOnDC.jpg",
+          caption: "first photo, before I even knew it had fired",
+        },
+        {
+          src: "/images/projects/NextPictureTakenAfterAdjustingSettings.jpg",
+          caption: "after adjusting the sensor settings",
+        },
+        {
+          src: "/images/projects/PictureWithCurrentCameraSettings.jpg",
+          caption: "current settings",
+        },
+      ],
     },
   },
   {
@@ -107,6 +135,10 @@ export const projects = [
         "I contributed components and the CMS integration as part of a team, rather than building the whole site by myself.",
       outcome:
         "The site is live and currently in use by the branch. That was the actual goal, not simply having something deployed.",
+      screenshot: {
+        src: "/images/projects/IEEEWebsite.png",
+        alt: "The IEEE uOttawa Student Branch homepage",
+      },
     },
   },
 ];
