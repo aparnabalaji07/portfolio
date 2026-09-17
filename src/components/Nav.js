@@ -32,8 +32,8 @@ export default function Nav() {
           <Image
             src="/images/heart-icon.png"
             alt=""
-            width={24}
-            height={24}
+            width={16}
+            height={16}
           />
           Aparna Balaji
         </a>
