@@ -11,10 +11,14 @@
       "Bash(node -e \"require.resolve\\('playwright'\\)\")",
       "Bash(npm ls *)",
       "Bash(curl -sf http://localhost:3000)",
-      "Bash(break)"
+      "Bash(break)",
+      "Read(//Users/aparnabalaji/Downloads/**)",
+      "Read(//Users/aparnabalaji/**)",
+      "Bash(cp ~/Downloads/AparnaBalajiResume.pdf public/Aparna_Balaji_Resume.pdf && ls -la public/Aparna_Balaji_Resume.pdf)"
     ],
     "additionalDirectories": [
-      "/Users/aparnabalaji/portfolio/src/app/projects"
+      "/Users/aparnabalaji/portfolio/src/app/projects",
+      "/Users/aparnabalaji/Downloads"
     ]
   }
 }
