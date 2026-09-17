@@ -10,18 +10,26 @@ export default function About() {
             I build things end to end.
           </h2>
           <p className="text-muted text-lg mt-6 max-w-2xl leading-relaxed">
-            I grew up in Frisco, Texas. Started my CS degree at the
-            University of Ottawa on an honors track, then transferred to UT
-            Dallas halfway through (long story). Along the way I&apos;ve
-            taught five-year-olds how to code, helped run an Arduino
+            I grew up in Frisco, Texas. I started my computer science degree
+            at the University of Ottawa on an honors track, then transferred
+            to the University of Texas at Dallas. Along the way, I have
+            taught coding to kids as young as five, helped run an Arduino
             workshop that won an IEEE award, and co-authored two papers on
-            measuring binary star separations. Not exactly related to
-            computer science, but it was fun. Everything below is stuff I
-            built because I wanted to, not because a class assigned it: a
-            backtesting engine, a digital camera held together by a
-            microcontroller, and whatever I get into next.
+            measuring the separation of binary star systems as a side
+            interest in amateur astronomy. That last one has nothing to do
+            with computer science, but it mattered to me because it was real
+            research, not a class project. Everything below is something I
+            built because I wanted to, not because it was assigned: a
+            backtesting engine, a digital camera controlled by a
+            microcontroller, and whatever I take on next.
           </p>
-          <p className="text-muted font-mono text-sm mt-6">
+          <p className="text-text text-lg mt-8 max-w-2xl leading-relaxed">
+            I am a woman of color in computer science, and I have been
+            doubted in this field because of it more than once. That has
+            made me pay attention to who gets left out and made sure I do
+            not do the same.
+          </p>
+          <p className="text-muted font-mono text-sm mt-8">
             Ottawa, ON / Dallas, TX
           </p>
           <p className="text-muted font-mono text-sm mt-1">

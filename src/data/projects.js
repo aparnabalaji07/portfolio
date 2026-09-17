@@ -6,7 +6,7 @@ export const projects = [
     status: "in progress",
     dateRange: "Sept 2026 – present",
     description:
-      "A backtesting engine I wrote from scratch to test trading strategies against historical data without cheating and looking at the future.",
+      "A backtesting engine I built from scratch to test trading strategies against historical data, with a guard against look-ahead bias.",
     tech: ["Python", "pandas"],
     github: "https://github.com/aparnabalaji07/market-simulator",
     demo: null,
@@ -27,7 +27,7 @@ export const projects = [
         {
           term: "Look-ahead guard",
           detail:
-            "A check that prevents any strategy from accidentally using future data to make a decision in the past, the most common way backtests lie to you.",
+            "A check that prevents a strategy from using data that would not have been available yet. This is the most common source of unrealistic backtest results.",
         },
         {
           term: "Strategies tested",
@@ -79,7 +79,7 @@ export const projects = [
     demo: null,
     detail: {
       intro:
-        "This one's fully hardware and firmware, no web stack. I wanted to see what it actually takes to get a microcontroller to behave like a real camera: capturing images, handling storage, and doing it reliably instead of once.",
+        "This project is entirely hardware and firmware, with no web component. I wanted to understand what it actually takes to make a microcontroller function as a reliable camera, one that captures multiple images in a session and stores each one correctly rather than working only once.",
       specs: [
         { label: "Board", value: "ESP32" },
         { label: "Image sensor", value: "OV2640" },
@@ -102,11 +102,11 @@ export const projects = [
     demo: null,
     detail: {
       intro:
-        "I worked on this alongside the rest of the IEEE uOttawa software team. My focus was building reusable React components and wiring up Payload CMS so that future officers, most of whom won't be developers, can update the site themselves after we hand it off.",
+        "I worked on this alongside the rest of the IEEE uOttawa software team. My focus was building reusable React components and setting up Payload CMS so that future officers, most of whom will not be developers, can update the site themselves after we hand it off.",
       role:
-        "Collaborative build: I contributed components and the CMS integration rather than owning the whole site solo.",
+        "I contributed components and the CMS integration as part of a team, rather than building the whole site by myself.",
       outcome:
-        "The site is live and currently in use by the branch, which was the actual goal, not just a deployed demo.",
+        "The site is live and currently in use by the branch. That was the actual goal, not simply having something deployed.",
     },
   },
 ];

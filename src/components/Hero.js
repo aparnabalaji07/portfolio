@@ -13,7 +13,7 @@ export default function Hero() {
         </h1>
         <p className="text-muted text-xl md:text-2xl mt-6 max-w-2xl">
           <Typewriter
-            text="CS student. I build things until they work, then find something else to break."
+            text="Computer science is something I keep coming back to, and I prefer building full projects rather than isolated exercises."
             speed={35}
           />
         </p>
