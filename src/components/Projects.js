@@ -25,8 +25,9 @@ export default function Projects() {
             What I have been building
           </h2>
           <p className="text-muted text-lg mt-4 max-w-xl">
-            My projects, spanning trading systems, embedded systems, and web
-            applications. Click on a project to learn more about what I did!
+            These are my projects, that span from trading systems, embedded
+            systems, and web applications. Click on a project to learn more
+            about what I did!
           </p>
         </FadeIn>
 
