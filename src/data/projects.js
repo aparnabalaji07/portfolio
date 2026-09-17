@@ -32,7 +32,8 @@ export const projects = [
         },
         {
           term: "Strategies tested",
-          detail: "Momentum and mean-reversion, coded and run against historical price data.",
+          detail:
+            "Momentum and mean-reversion, coded and run against historical price data.",
         },
       ],
     },
@@ -44,7 +45,7 @@ export const projects = [
     status: "live",
     dateRange: "July 2026",
     description:
-      "A small web app that turns a shelter pet's basic info into a written adoption bio, using the Claude API.",
+      "A small web app that turns a shelter pet's basic info into a written adoption bio, using an LLM API.",
     tech: ["React", "Claude API", "Vercel"],
     github: null,
     demo: "https://adoption-bio-generator.vercel.app/",
@@ -58,15 +59,18 @@ export const projects = [
       steps: [
         {
           label: "Input",
-          detail: "You enter a pet's basic details: species, breed, age, temperament, anything notable.",
+          detail:
+            "You enter a pet's basic details: species, breed, age, temperament, anything notable.",
         },
         {
           label: "Generate",
-          detail: "The backend sends that to the Claude API with a prompt built to produce an adoption-listing style bio.",
+          detail:
+            "The backend sends that to the Claude API with a prompt built to produce an adoption-listing style bio.",
         },
         {
           label: "Output",
-          detail: "A written bio comes back in the React frontend, ready to copy into a listing.",
+          detail:
+            "A written bio comes back in the React frontend, ready to copy into a listing.",
         },
       ],
       screenshot: {
@@ -144,8 +148,7 @@ export const projects = [
     detail: {
       intro:
         "I worked on this alongside the rest of the IEEE uOttawa software team. My focus was building reusable React components and setting up Payload CMS so that future officers, most of whom will not be developers, can update the site themselves after we hand it off.",
-      role:
-        "I contributed components and the CMS integration as part of a team, rather than building the whole site by myself.",
+      role: "I contributed components and the CMS integration as part of a team, rather than building the whole site by myself.",
       outcome:
         "The site is live and currently in use by the branch. That was the actual goal, not simply having something deployed.",
       screenshot: {
