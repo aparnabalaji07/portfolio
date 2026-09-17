@@ -29,12 +29,13 @@ export default function Starfield() {
       {stars.map((star) => (
         <motion.div
           key={star.id}
-          className="absolute rounded-full bg-white"
+          className="absolute rounded-full"
           style={{
             top: `${star.top}%`,
             left: `${star.left}%`,
             width: `${star.size}px`,
             height: `${star.size}px`,
+            backgroundColor: "var(--star)",
           }}
           animate={{ opacity: [0.2, 0.8, 0.2] }}
           transition={{
