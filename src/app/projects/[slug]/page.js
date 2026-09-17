@@ -94,7 +94,7 @@ export default async function ProjectPage({ params }) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-white/20 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
+                className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-text/20 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
               >
                 github
               </a>

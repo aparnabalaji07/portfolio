@@ -31,11 +31,11 @@ export default function Projects() {
           </p>
         </FadeIn>
 
-        <div className="mt-14 border-t border-white/10">
+        <div className="mt-14 border-t border-text/10">
           {projects.map((project) => (
             <div
               key={project.slug}
-              className="border-b border-white/10 py-10 transition-colors hover:bg-white/2"
+              className="border-b border-text/10 py-10 transition-colors hover:bg-text/2"
             >
               <div className="flex flex-col md:flex-row md:justify-between gap-6">
                 <div className="md:w-64 shrink-0">
@@ -89,7 +89,7 @@ export default function Projects() {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-white/20 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
+                          className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-text/20 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
                         >
                           github
                         </a>
