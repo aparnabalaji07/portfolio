@@ -10,6 +10,7 @@ export const projects = [
     tech: ["Python", "pandas"],
     github: "https://github.com/aparnabalaji07/market-simulator",
     demo: null,
+    thumbnail: null,
     detail: {
       intro:
         "I wanted to know if the trading strategies people talk about online actually hold up, so I built the infrastructure to test them properly instead of taking anyone's word for it. That meant writing my own portfolio tracker, order logic, and P&L accounting before I could even get to the strategies themselves.",
@@ -47,6 +48,10 @@ export const projects = [
     tech: ["React", "Claude API", "Vercel"],
     github: null,
     demo: "https://adoption-bio-generator.vercel.app/",
+    thumbnail: {
+      src: "/images/projects/AdoptionBioGenerator.png",
+      alt: "The Adoption Bio Generator form",
+    },
     detail: {
       intro:
         "I built both the frontend and backend myself as a self-directed project to get real, end-to-end experience integrating an LLM API into a product rather than just calling it from a script.",
@@ -81,6 +86,10 @@ export const projects = [
     tech: ["ESP32", "C++", "Arduino", "OV2640", "MicroSD"],
     github: null,
     demo: null,
+    thumbnail: {
+      src: "/images/projects/ESP32FirstIteration.JPG",
+      alt: "The ESP32-CAM module wired up on a breadboard",
+    },
     detail: {
       intro:
         "This project is entirely hardware and firmware, with no web component. I wanted to understand what it actually takes to make a microcontroller function as a reliable camera, one that captures multiple images in a session and stores each one correctly rather than working only once.",
@@ -128,6 +137,10 @@ export const projects = [
     tech: ["React", "Next.js", "Payload CMS", "Tailwind CSS", "Vercel"],
     github: "https://github.com/ieee-webmaster/ieeeuottawa-v3",
     demo: "https://ieeeuottawa.ca/en/",
+    thumbnail: {
+      src: "/images/projects/IEEEWebsite.png",
+      alt: "The IEEE uOttawa Student Branch homepage",
+    },
     detail: {
       intro:
         "I worked on this alongside the rest of the IEEE uOttawa software team. My focus was building reusable React components and setting up Payload CMS so that future officers, most of whom will not be developers, can update the site themselves after we hand it off.",

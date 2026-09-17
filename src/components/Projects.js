@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
+import ClickableImage from "@/components/ClickableImage";
 import { projects } from "@/data/projects";
 
 const statusDot = {
@@ -95,6 +96,18 @@ export default function Projects() {
                     </div>
                   )}
                 </div>
+
+                {project.thumbnail && (
+                  <div className="relative h-24 w-32 shrink-0 overflow-hidden">
+                    <ClickableImage
+                      src={project.thumbnail.src}
+                      alt={project.thumbnail.alt}
+                      fill
+                      sizes="128px"
+                      imgClassName="object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           ))}
