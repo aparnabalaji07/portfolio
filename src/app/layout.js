@@ -12,9 +12,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://portfolio-sooty-delta-72.vercel.app";
+const siteDescription =
+  "Computer science student at the University of Texas at Dallas, building trading systems, embedded hardware, and web apps.";
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Aparna Balaji",
-  description: "Computer science student at the University of Texas at Dallas, building trading systems, embedded hardware, and web apps.",
+  description: siteDescription,
+  openGraph: {
+    title: "Aparna Balaji",
+    description: siteDescription,
+    url: siteUrl,
+    siteName: "Aparna Balaji",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aparna Balaji",
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({ children }) {
