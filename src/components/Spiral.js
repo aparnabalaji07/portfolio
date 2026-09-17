@@ -20,7 +20,7 @@ export default function Spiral() {
   return (
     <svg
       viewBox="-260 -260 520 520"
-      className="absolute left-[-200px] top-1/2 -translate-y-1/2 w-[480px] h-[480px] md:left-[-140px] md:w-[620px] md:h-[620px] pointer-events-none"
+      className="absolute -right-80 top-1/2 -translate-y-1/2 w-175 h-175 md:-right-65 md:w-237.5 md:h-237.5 opacity-50 pointer-events-none"
       aria-hidden="true"
     >
       <path
