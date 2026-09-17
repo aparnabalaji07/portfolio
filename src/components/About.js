@@ -6,19 +6,24 @@ export default function About() {
     <section id="about" className="py-24">
       <Container>
         <FadeIn>
-          <p className="text-accent text-sm uppercase tracking-widest mb-4">
-            about me
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.1}>
           <h2 className="text-text text-4xl md:text-5xl font-medium max-w-3xl">
-            I am a first-year CS student at uOttawa, originally from Frisco,
-            Texas.
+            I like building things end to end, from the code down to whatever
+            it&apos;s supposed to run on.
           </h2>
-        </FadeIn>
-        <FadeIn delay={0.2}>
           <p className="text-muted text-lg mt-6 max-w-2xl leading-relaxed">
-            Small description about me here (IN PROGRESS)
+            I grew up in Frisco, Texas, and started my CS degree at the
+            University of Ottawa on an honors track before transferring to
+            the University of Texas at Dallas. In between, I&apos;ve taught
+            coding fundamentals to kids as young as five, coordinated a
+            first-year Arduino workshop that won an IEEE award, and
+            co-authored a couple of papers on binary star measurements as a
+            side interest in amateur astronomy. Most of what&apos;s below is
+            what I build when nobody&apos;s assigning it: a backtesting
+            engine, a digital camera built around a microcontroller, and a
+            few other things I wanted to see work.
+          </p>
+          <p className="text-muted font-mono text-sm mt-6">
+            Frisco, TX / Ottawa, ON / Dallas, TX
           </p>
         </FadeIn>
       </Container>
