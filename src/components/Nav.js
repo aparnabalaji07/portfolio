@@ -53,8 +53,10 @@ export default function Nav() {
         </a>
       </div>
       <button
-        className="md:hidden text-text text-2xl"
+        className="md:hidden text-text text-2xl outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2 rounded-sm"
         onClick={() => setMenuOpen(!menuOpen)}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
       >
         {menuOpen ? "✕" : "☰"}
       </button>
