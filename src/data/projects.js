@@ -99,7 +99,7 @@ export const projects = [
       "The branch website for IEEE uOttawa, built with the software team so non-technical officers could update content without touching code.",
     tech: ["React", "Next.js", "Payload CMS", "Tailwind CSS", "Vercel"],
     github: "https://github.com/ieee-webmaster/ieeeuottawa-v3",
-    demo: null,
+    demo: "https://ieeeuottawa.ca/en/",
     detail: {
       intro:
         "I worked on this alongside the rest of the IEEE uOttawa software team. My focus was building reusable React components and setting up Payload CMS so that future officers, most of whom will not be developers, can update the site themselves after we hand it off.",
