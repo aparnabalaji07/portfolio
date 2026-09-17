@@ -14,7 +14,10 @@
       "Bash(break)",
       "Read(//Users/aparnabalaji/Downloads/**)",
       "Read(//Users/aparnabalaji/**)",
-      "Bash(cp ~/Downloads/AparnaBalajiResume.pdf public/Aparna_Balaji_Resume.pdf && ls -la public/Aparna_Balaji_Resume.pdf)"
+      "Bash(cp ~/Downloads/AparnaBalajiResume.pdf public/Aparna_Balaji_Resume.pdf && ls -la public/Aparna_Balaji_Resume.pdf)",
+      "Bash(chmod +x /private/tmp/claude-501/-Users-aparnabalaji-portfolio/c181199b-f3e7-4b1c-874f-d6548c1f2665/scratchpad/reword_commits.sh)",
+      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch -f --msg-filter '/private/tmp/claude-501/-Users-aparnabalaji-portfolio/c181199b-f3e7-4b1c-874f-d6548c1f2665/scratchpad/reword_commits.sh' -- f326c9c^..HEAD)",
+      "Bash(git stash *)"
     ],
     "additionalDirectories": [
       "/Users/aparnabalaji/portfolio/src/app/projects",
