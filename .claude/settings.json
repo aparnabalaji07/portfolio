@@ -4,7 +4,14 @@
       "Bash(npx next *)",
       "Bash(npx eslint *)",
       "Bash(git commit *)",
-      "Bash(mkdir -p /Users/aparnabalaji/portfolio/src/app/projects/\\\\[slug\\\\])"
+      "Bash(mkdir -p /Users/aparnabalaji/portfolio/src/app/projects/\\\\[slug\\\\])",
+      "Bash(command -v chromium-cli)",
+      "Bash(npx --no-install chromium-cli --help)",
+      "Bash(npx --no-install playwright --version)",
+      "Bash(node -e \"require.resolve\\('playwright'\\)\")",
+      "Bash(npm ls *)",
+      "Bash(curl -sf http://localhost:3000)",
+      "Bash(break)"
     ],
     "additionalDirectories": [
       "/Users/aparnabalaji/portfolio/src/app/projects"

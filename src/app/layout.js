@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Aparna Balaji",
-  description: "Computer Science student at the University of Ottawa.",
+  description: "Computer science student at the University of Texas at Dallas, building trading systems, embedded hardware, and web apps.",
 };
 
 export default function RootLayout({ children }) {
