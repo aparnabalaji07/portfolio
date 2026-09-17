@@ -24,10 +24,15 @@ export default function Experience() {
             >
               <div className="flex flex-col md:flex-row md:justify-between gap-6">
                 <div className="md:w-64 shrink-0">
-                  <h3 className="text-text text-xl font-medium">
-                    {job.role}
-                  </h3>
-                  <p className="text-muted text-sm mt-1">{job.org}</p>
+                  <div className="flex items-center gap-2">
+                    {job.dateRange.includes("present") && (
+                      <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                    )}
+                    <h3 className="text-text text-xl font-medium">
+                      {job.role}
+                    </h3>
+                  </div>
+                  <p className="text-accent-light text-sm mt-1">{job.org}</p>
                   <p className="text-muted text-xs font-mono mt-2">
                     {job.dateRange}
                   </p>
@@ -38,11 +43,18 @@ export default function Experience() {
 
                 {job.description && (
                   <div className="flex-1">
-                    <p className="text-muted text-base leading-relaxed max-w-xl">
-                      {job.description}
-                    </p>
+                    {job.description.map((paragraph, i) => (
+                      <p
+                        key={i}
+                        className={`text-muted text-base leading-relaxed max-w-xl ${
+                          i > 0 ? "mt-4" : ""
+                        }`}
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
                     {job.skills.length > 0 && (
-                      <p className="text-muted text-xs font-mono mt-3">
+                      <p className="text-muted text-xs font-mono mt-4">
                         {job.skills.join(", ")}
                       </p>
                     )}
