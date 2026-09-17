@@ -29,7 +29,7 @@ export default function Starfield() {
       {stars.map((star) => (
         <motion.div
           key={star.id}
-          className="absolute rounded-full bg-text"
+          className="absolute rounded-full bg-white"
           style={{
             top: `${star.top}%`,
             left: `${star.left}%`,
