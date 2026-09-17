@@ -35,7 +35,7 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.slug}
-              className="border-b border-text/10 py-10 transition-colors hover:bg-text/2"
+              className="relative border-b border-text/10 py-10 before:content-[''] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-accent before:opacity-0 before:transition-opacity hover:before:opacity-100 after:content-[''] after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-accent after:opacity-0 after:transition-opacity hover:after:opacity-100"
             >
               <div className="flex flex-col md:flex-row md:justify-between gap-6">
                 <div className="md:w-64 shrink-0">
