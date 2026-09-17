@@ -19,7 +19,7 @@ export default function About() {
             run an Arduino workshop that won an IEEE award, and co-authored two
             papers on measuring the separation of binary star systems as a side
             interest in amateur astronomy. Everything below is something I built
-            because I interested in the subject, not because it was assigned. I
+            because I was interested in the subject, not because it was assigned. I
             have built a backtesting engine, a digital camera controlled by a
             microcontroller, and am looking forward to what I will build next.
           </p>
