@@ -6,6 +6,7 @@ export const experience = [
     location: "Dallas, TX",
     description: null,
     skills: [],
+    images: [],
   },
   {
     role: "First Year Coordinator",
@@ -22,6 +23,16 @@ export const experience = [
       "Mentorship",
       "Workshop Facilitation",
     ],
+    images: [
+      {
+        src: "/images/experiences/BitsBytesBreadboards1.JPG",
+        alt: "Presenting the Bits, Bytes, and Breadboards workshop",
+      },
+      {
+        src: "/images/experiences/IEEEAward2.JPG",
+        alt: "Accepting the IEEE uOttawa Award for Premier Technical Event of the Year",
+      },
+    ],
   },
   {
     role: "Junior Vice President Academic",
@@ -33,6 +44,12 @@ export const experience = [
       "I worked closely with the VP Academic and professors to improve communication between students and faculty and to create better academic resources for computer science students.",
     ],
     skills: ["Event Planning", "Academic Advocacy", "Communication"],
+    images: [
+      {
+        src: "/images/experiences/CSSAExecTeam.png",
+        alt: "The Computer Science Student Association executive team",
+      },
+    ],
   },
   {
     role: "Barista",
@@ -49,6 +66,12 @@ export const experience = [
       "Customer Service",
       "Working Under Pressure",
     ],
+    images: [
+      {
+        src: "/images/experiences/WorkingAtLaLaLand2.jpg",
+        alt: "Working behind the counter at La La Land Kind Cafe",
+      },
+    ],
   },
   {
     role: "Instructor",
@@ -64,6 +87,12 @@ export const experience = [
       "Student Engagement",
       "Problem-Solving Instruction",
       "Operations",
+    ],
+    images: [
+      {
+        src: "/images/experiences/StudentITaughtAtiCode.JPG",
+        alt: "A student working on a coding project at iCode",
+      },
     ],
   },
 ];

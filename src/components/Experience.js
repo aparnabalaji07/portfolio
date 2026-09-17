@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
 import { experience } from "@/data/experience";
@@ -57,6 +58,23 @@ export default function Experience() {
                       <p className="text-muted text-xs font-mono mt-4">
                         {job.skills.join(", ")}
                       </p>
+                    )}
+                    {job.images.length > 0 && (
+                      <div className="flex gap-3 mt-5">
+                        {job.images.map((image) => (
+                          <div
+                            key={image.src}
+                            className="relative h-24 w-32 shrink-0"
+                          >
+                            <Image
+                              src={image.src}
+                              alt={image.alt}
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
+                        ))}
+                      </div>
                     )}
                   </div>
                 )}
