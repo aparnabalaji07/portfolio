@@ -3,7 +3,11 @@
     "allow": [
       "Bash(npx next *)",
       "Bash(npx eslint *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(mkdir -p /Users/aparnabalaji/portfolio/src/app/projects/\\\\[slug\\\\])"
+    ],
+    "additionalDirectories": [
+      "/Users/aparnabalaji/portfolio/src/app/projects"
     ]
   }
 }
