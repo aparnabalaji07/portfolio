@@ -21,13 +21,13 @@ export default function Hero() {
         <div className="flex gap-4 mt-10">
           <a
             href="#projects"
-            className="bg-accent text-bg px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+            className="bg-accent text-bg px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity outline-none focus-visible:outline-2 focus-visible:outline-text focus-visible:outline-offset-2"
           >
             view my work
           </a>
           <a
             href="/Aparna_Balaji_Resume.pdf"
-            className="border border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-bg transition-colors"
+            className="border border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-bg transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2"
           >
             download resume
           </a>
@@ -36,7 +36,7 @@ export default function Hero() {
 
       <motion.a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted text-2xl hover:text-accent transition-colors cursor-pointer"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted text-2xl hover:text-accent transition-colors cursor-pointer outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-full"
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
       >

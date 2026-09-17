@@ -20,31 +20,34 @@ export default function Nav() {
       }`}
     >
       {" "}
-      <a href="#" className="text-text text-lg font-medium">
+      <a
+        href="#"
+        className="text-text text-lg font-medium outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
+      >
         Aparna Balaji
       </a>
       <div className="hidden md:flex gap-8">
         <a
           href="#about"
-          className="text-muted hover:text-accent transition-colors"
+          className="text-muted hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
         >
           about
         </a>
         <a
           href="#projects"
-          className="text-muted hover:text-accent transition-colors"
+          className="text-muted hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
         >
           projects
         </a>
         <a
           href="#experience"
-          className="text-muted hover:text-accent transition-colors"
+          className="text-muted hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
         >
           experience
         </a>
         <a
           href="#contact"
-          className="text-muted hover:text-accent transition-colors"
+          className="text-muted hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
         >
           contact
         </a>
@@ -59,28 +62,28 @@ export default function Nav() {
         <div className="absolute top-16 right-0 w-48 bg-bg border-l border-b border-white/10 flex flex-col">
           <a
             href="#about"
-            className="px-4 py-2 text-muted hover:text-accent transition-colors"
+            className="px-4 py-2 text-muted hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:-outline-offset-2"
             onClick={() => setMenuOpen(false)}
           >
             about
           </a>
           <a
             href="#projects"
-            className="px-4 py-2 text-muted hover:text-accent transition-colors"
+            className="px-4 py-2 text-muted hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:-outline-offset-2"
             onClick={() => setMenuOpen(false)}
           >
             projects
           </a>
           <a
             href="#experience"
-            className="px-4 py-2 text-muted hover:text-accent transition-colors"
+            className="px-4 py-2 text-muted hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:-outline-offset-2"
             onClick={() => setMenuOpen(false)}
           >
             experience
           </a>
           <a
             href="#contact"
-            className="px-4 py-2 text-muted hover:text-accent transition-colors"
+            className="px-4 py-2 text-muted hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:-outline-offset-2"
             onClick={() => setMenuOpen(false)}
           >
             contact

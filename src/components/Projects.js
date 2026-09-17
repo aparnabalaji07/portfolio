@@ -40,7 +40,7 @@ export default function Projects() {
                   <h3 className="text-text text-xl font-medium">
                     <Link
                       href={`/projects/${project.slug}`}
-                      className="hover:text-accent transition-colors"
+                      className="hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
                     >
                       {project.title}
                     </Link>
@@ -77,7 +77,7 @@ export default function Projects() {
                           href={project.demo}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm text-accent hover:text-accent-light transition-colors underline underline-offset-4 decoration-accent/30"
+                          className="text-sm text-accent hover:text-accent-light transition-colors underline underline-offset-4 decoration-accent/30 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
                         >
                           live demo
                         </a>
@@ -87,7 +87,7 @@ export default function Projects() {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-white/20"
+                          className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-white/20 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
                         >
                           github
                         </a>

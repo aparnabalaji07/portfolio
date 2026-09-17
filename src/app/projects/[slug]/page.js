@@ -35,7 +35,7 @@ export default async function ProjectPage({ params }) {
       <Container>
         <Link
           href="/#projects"
-          className="text-muted text-sm hover:text-accent transition-colors"
+          className="text-muted text-sm hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
         >
           ← back to projects
         </Link>
@@ -75,7 +75,7 @@ export default async function ProjectPage({ params }) {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-accent text-bg px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+                  className="bg-accent text-bg px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity outline-none focus-visible:outline-2 focus-visible:outline-text focus-visible:outline-offset-2"
                 >
                   visit the live site
                 </a>
@@ -84,7 +84,7 @@ export default async function ProjectPage({ params }) {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-accent hover:text-accent-light transition-colors underline underline-offset-4 decoration-accent/30"
+                  className="text-sm text-accent hover:text-accent-light transition-colors underline underline-offset-4 decoration-accent/30 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
                 >
                   live demo
                 </a>
@@ -94,7 +94,7 @@ export default async function ProjectPage({ params }) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-white/20"
+                className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-white/20 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
               >
                 github
               </a>
