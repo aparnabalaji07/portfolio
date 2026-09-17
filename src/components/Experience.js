@@ -60,17 +60,17 @@ export default function Experience() {
                       </p>
                     )}
                     {job.images.length > 0 && (
-                      <div className="flex gap-3 mt-5">
+                      <div className="flex flex-wrap gap-3 mt-5">
                         {job.images.map((image) => (
                           <div
                             key={image.src}
-                            className="relative h-24 w-32 shrink-0"
+                            className="relative h-24 w-32 shrink-0 overflow-hidden"
                           >
                             <Image
                               src={image.src}
                               alt={image.alt}
                               fill
-                              className="object-cover"
+                              className="object-cover transition-transform duration-300 hover:scale-105"
                             />
                           </div>
                         ))}

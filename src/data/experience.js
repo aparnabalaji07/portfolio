@@ -29,6 +29,14 @@ export const experience = [
         alt: "Presenting the Bits, Bytes, and Breadboards workshop",
       },
       {
+        src: "/images/experiences/BitsBytesBreadboards2.JPG",
+        alt: "Students working through the Bits, Bytes, and Breadboards workshop",
+      },
+      {
+        src: "/images/experiences/IEEEAward1.png",
+        alt: "Holding the IEEE uOttawa Award for Premier Technical Event of the Year",
+      },
+      {
         src: "/images/experiences/IEEEAward2.JPG",
         alt: "Accepting the IEEE uOttawa Award for Premier Technical Event of the Year",
       },
@@ -49,6 +57,10 @@ export const experience = [
         src: "/images/experiences/CSSAExecTeam.png",
         alt: "The Computer Science Student Association executive team",
       },
+      {
+        src: "/images/experiences/CSSAExecTeam2.jpg",
+        alt: "The CSSA team at an office event",
+      },
     ],
   },
   {
@@ -67,6 +79,10 @@ export const experience = [
       "Working Under Pressure",
     ],
     images: [
+      {
+        src: "/images/experiences/WorkingAtLaLaLand.jpg",
+        alt: "At the counter at La La Land Kind Cafe",
+      },
       {
         src: "/images/experiences/WorkingAtLaLaLand2.jpg",
         alt: "Working behind the counter at La La Land Kind Cafe",
@@ -92,6 +108,10 @@ export const experience = [
       {
         src: "/images/experiences/StudentITaughtAtiCode.JPG",
         alt: "A student working on a coding project at iCode",
+      },
+      {
+        src: "/images/experiences/iCodeProject.JPG",
+        alt: "A Makey Makey project built with conductive materials",
       },
     ],
   },
