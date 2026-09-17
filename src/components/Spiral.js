@@ -24,7 +24,7 @@ export default function Spiral() {
     >
       <svg
         viewBox="-260 -260 520 520"
-        className="absolute -right-100 top-1/2 -translate-y-1/2 w-225 h-225 md:-right-80 md:w-300 md:h-300"
+        className="absolute -right-160 top-1/2 -translate-y-1/2 w-350 h-350 md:-right-120 md:w-500 md:h-500"
       >
         <path
           d={spiralPath}
