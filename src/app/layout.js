@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://portfolio-sooty-delta-72.vercel.app";
+const siteUrl = "https://aparnabalaji.vercel.app";
 const siteDescription =
   "Computer science student at the University of Texas at Dallas, building trading systems, embedded hardware, and web apps.";
 
