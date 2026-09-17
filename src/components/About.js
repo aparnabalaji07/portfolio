@@ -7,7 +7,7 @@ export default function About() {
       <Container>
         <FadeIn>
           <h2 className="text-text text-4xl md:text-5xl font-medium max-w-3xl">
-            I build things end to end.
+            I love building things!
           </h2>
           <p className="text-muted text-lg mt-6 max-w-2xl leading-relaxed">
             I grew up in Frisco, Texas. I started my computer science degree
@@ -16,12 +16,11 @@ export default function About() {
             taught coding to kids as young as five, helped run an Arduino
             workshop that won an IEEE award, and co-authored two papers on
             measuring the separation of binary star systems as a side
-            interest in amateur astronomy. That last one has nothing to do
-            with computer science, but it mattered to me because it was real
-            research, not a class project. Everything below is something I
-            built because I wanted to, not because it was assigned: a
-            backtesting engine, a digital camera controlled by a
-            microcontroller, and whatever I take on next.
+            interest in amateur astronomy. Everything below is something I
+            built because I wanted to, not because it was assigned. I have
+            built a backtesting engine, a digital camera controlled by a
+            microcontroller, and am looking forward to what I will build
+            next.
           </p>
           <p className="text-text text-lg mt-8 max-w-2xl leading-relaxed">
             I am a woman of color in computer science, and I have been
