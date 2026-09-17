@@ -1,6 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +37,15 @@ export const metadata = {
   },
 };
 
+const themeInitScript = `
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      document.documentElement.setAttribute("data-theme", stored || "dark");
+    } catch (e) {}
+  })();
+`;
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -41,8 +53,13 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Script id="theme-init" strategy="beforeInteractive">
+          {themeInitScript}
+        </Script>
         <Nav />
         {children}
+        <Footer />
+        <ThemeToggle />
       </body>
     </html>
   );
