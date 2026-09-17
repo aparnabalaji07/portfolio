@@ -52,6 +52,12 @@ export default function Nav() {
               projects
             </a>
             <a
+              href="#research"
+              className="text-text hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
+            >
+              research
+            </a>
+            <a
               href="#experience"
               className="text-text hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
             >
@@ -96,6 +102,13 @@ export default function Nav() {
                 onClick={() => setMenuOpen(false)}
               >
                 projects
+              </a>
+              <a
+                href="#research"
+                className="px-4 py-2 text-text hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:-outline-offset-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                research
               </a>
               <a
                 href="#experience"
