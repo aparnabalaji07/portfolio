@@ -3,7 +3,7 @@ import FadeIn from "@/components/FadeIn";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24">
+    <section id="contact" className="pt-12 pb-24">
       <Container>
         <FadeIn>
           <div className="max-w-md mx-auto text-center">
