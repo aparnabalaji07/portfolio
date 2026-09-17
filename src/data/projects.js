@@ -1,29 +1,112 @@
 export const projects = [
   {
-    slug: "project-one",
-    title: "Project One",
-    status: "live",
-    description: "A description of what this project does and why I built it.",
-    tech: ["meow", "woof", "bark"],
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
-    slug: "project-two",
-    title: "Project Two",
+    slug: "market-trading-simulator",
+    title: "Market Trading Simulator",
+    kind: "data",
     status: "in progress",
-    description: "A description of what this project does and why I built it.",
-    tech: [],
-    github: "https://github.com",
+    dateRange: "Sept 2026 – present",
+    description:
+      "A backtesting engine I wrote from scratch to test trading strategies against historical data without cheating and looking at the future.",
+    tech: ["Python", "pandas"],
+    github: "https://github.com/aparnabalaji07/market-simulator",
     demo: null,
+    detail: {
+      intro:
+        "I wanted to know if the trading strategies people talk about online actually hold up, so I built the infrastructure to test them properly instead of taking anyone's word for it. That meant writing my own portfolio tracker, order logic, and P&L accounting before I could even get to the strategies themselves.",
+      mechanics: [
+        {
+          term: "Portfolio tracking",
+          detail:
+            "Buy and sell logic with running position sizes, plus separate realized and unrealized profit/loss calculations at every step.",
+        },
+        {
+          term: "Walk-forward loop",
+          detail:
+            "Strategies are trained and tested on rolling windows of historical data, moving forward in time rather than testing on the whole dataset at once.",
+        },
+        {
+          term: "Look-ahead guard",
+          detail:
+            "A check that prevents any strategy from accidentally using future data to make a decision in the past, the most common way backtests lie to you.",
+        },
+        {
+          term: "Strategies tested",
+          detail: "Momentum and mean-reversion, coded and run against historical price data.",
+        },
+      ],
+    },
   },
   {
-    slug: "project-three",
-    title: "Project Three",
-    status: "coming soon",
-    description: "A description of what this project does and why I built it.",
-    tech: [],
+    slug: "pet-adoption-bio-generator",
+    title: "Pet Adoption Bio Generator",
+    kind: "web",
+    status: "live",
+    dateRange: "July 2026",
+    description:
+      "A small web app that turns a shelter pet's basic info into a written adoption bio, using the Claude API.",
+    tech: ["React", "Claude API", "Vercel"],
+    github: null,
+    demo: "https://adoption-bio-generator.vercel.app/",
+    detail: {
+      intro:
+        "I built both the frontend and backend myself as a self-directed project to get real, end-to-end experience integrating an LLM API into a product rather than just calling it from a script.",
+      steps: [
+        {
+          label: "Input",
+          detail: "You enter a pet's basic details: species, breed, age, temperament, anything notable.",
+        },
+        {
+          label: "Generate",
+          detail: "The backend sends that to the Claude API with a prompt built to produce an adoption-listing style bio.",
+        },
+        {
+          label: "Output",
+          detail: "A written bio comes back in the React frontend, ready to copy into a listing.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "esp32-digital-camera",
+    title: "ESP32 Digital Camera",
+    kind: "hardware",
+    status: "in progress",
+    dateRange: "Feb 2026 – present",
+    description:
+      "A digital camera built around an ESP32 microcontroller, with firmware I wrote to control image capture and storage.",
+    tech: ["ESP32", "C++", "Arduino", "OV2640", "MicroSD"],
     github: null,
     demo: null,
+    detail: {
+      intro:
+        "This one's fully hardware and firmware, no web stack. I wanted to see what it actually takes to get a microcontroller to behave like a real camera: capturing images, handling storage, and doing it reliably instead of once.",
+      specs: [
+        { label: "Board", value: "ESP32" },
+        { label: "Image sensor", value: "OV2640" },
+        { label: "Storage", value: "MicroSD" },
+        { label: "Firmware", value: "C++, Arduino framework" },
+      ],
+      note: "The firmware handles triggering the sensor, capturing multiple photos in a session, and writing each one to the SD card without corrupting earlier files.",
+    },
+  },
+  {
+    slug: "ieee-uottawa-website",
+    title: "IEEE uOttawa Student Branch Website",
+    kind: "web",
+    status: "live",
+    dateRange: "Nov 2025 – May 2026",
+    description:
+      "The branch website for IEEE uOttawa, built with the software team so non-technical officers could update content without touching code.",
+    tech: ["React", "Next.js", "Payload CMS", "Tailwind CSS", "Vercel"],
+    github: "https://github.com/ieee-webmaster/ieeeuottawa-v3",
+    demo: null,
+    detail: {
+      intro:
+        "I worked on this alongside the rest of the IEEE uOttawa software team. My focus was building reusable React components and wiring up Payload CMS so that future officers, most of whom won't be developers, can update the site themselves after we hand it off.",
+      role:
+        "Collaborative build: I contributed components and the CMS integration rather than owning the whole site solo.",
+      outcome:
+        "The site is live and currently in use by the branch, which was the actual goal, not just a deployed demo.",
+    },
   },
 ];
