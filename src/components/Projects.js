@@ -21,7 +21,7 @@ export default function Projects() {
       <Container>
         <FadeIn>
           <h2 className="text-text text-4xl md:text-5xl font-medium">
-            What I&apos;ve been building
+            What I have been building
           </h2>
           <p className="text-muted text-lg mt-4 max-w-xl">
             Four projects, spanning trading systems, embedded hardware, and a
