@@ -8,16 +8,13 @@ export default function Hero() {
     <section className="min-h-screen flex flex-col justify-center">
       <Starfield />
       <div className="px-6 md:px-12 max-w-4xl relative z-10">
-        <p className="text-accent text-sm uppercase tracking-widest mb-4">
-          CS student · uOttawa
-        </p>
         <h1 className="text-text text-6xl md:text-8xl font-medium">
           Aparna Balaji
         </h1>
         <p className="text-muted text-xl md:text-2xl mt-6 max-w-2xl">
           <Typewriter
-            text="Something about what I am building and interested in here **IN PROGRESS**."
-            speed={50}
+            text="Computer science student who likes finishing what I start, from trading algorithms to soldered circuit boards."
+            speed={35}
           />
         </p>
 
