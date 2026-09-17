@@ -33,8 +33,8 @@ export default function Starfield() {
           style={{
             top: `${star.top}%`,
             left: `${star.left}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
+            width: `calc(${star.size}px * var(--star-scale, 1))`,
+            height: `calc(${star.size}px * var(--star-scale, 1))`,
             backgroundColor: "var(--star)",
           }}
           animate={{ opacity: [0.2, 0.8, 0.2] }}

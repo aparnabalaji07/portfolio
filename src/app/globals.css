@@ -8,6 +8,7 @@
   --accent-light: #ec9eb5;
   --muted: #a89d95;
   --star: #f1ebe7;
+  --star-scale: 1;
   color-scheme: dark;
 }
 
@@ -18,7 +19,8 @@
   --accent: #c9436f;
   --accent-light: #a8355c;
   --muted: #6f645b;
-  --star: #cfc2b3;
+  --star: #dcb8bf;
+  --star-scale: 1.6;
   color-scheme: light;
 }
 
