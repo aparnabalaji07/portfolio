@@ -56,7 +56,7 @@ export default function Nav() {
         {menuOpen ? "✕" : "☰"}
       </button>
       {menuOpen && (
-        <div className="absolute top-16 right-0 w-48 bg-bg shadow-lg flex flex-col">
+        <div className="absolute top-16 right-0 w-48 bg-bg border-l border-b border-white/10 flex flex-col">
           <a
             href="#about"
             className="px-4 py-2 text-muted hover:text-accent transition-colors"
