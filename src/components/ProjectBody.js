@@ -32,12 +32,12 @@ function HardwareBody({ detail }) {
       {detail.buildPhotos && (
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
           {detail.buildPhotos.map((photo) => (
-            <div key={photo.src} className="relative aspect-4/3">
+            <div key={photo.src} className="relative aspect-4/3 overflow-hidden">
               <Image
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
           ))}
@@ -52,12 +52,12 @@ function HardwareBody({ detail }) {
           <div className="mt-4 flex flex-col sm:flex-row gap-4">
             {detail.cameraRoll.map((shot) => (
               <div key={shot.src} className="flex-1">
-                <div className="relative aspect-square">
+                <div className="relative aspect-square overflow-hidden">
                   <Image
                     src={shot.src}
                     alt={shot.caption}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
                 <p className="text-muted text-xs font-mono mt-2">
@@ -76,14 +76,14 @@ function StepsBody({ detail }) {
   return (
     <>
       {detail.screenshot && (
-        <div className="relative aspect-video mt-10 max-w-2xl">
-          <Image
-            src={detail.screenshot.src}
-            alt={detail.screenshot.alt}
-            fill
-            className="object-cover object-top"
-          />
-        </div>
+        <Image
+          src={detail.screenshot.src}
+          alt={detail.screenshot.alt}
+          width={0}
+          height={0}
+          sizes="(min-width: 640px) 42rem, 100vw"
+          className="w-full h-auto max-w-2xl mt-10 border border-white/10"
+        />
       )}
       <div className="mt-10 flex flex-col md:flex-row md:items-start gap-8 md:gap-0 max-w-2xl">
         {detail.steps.map((step, i) => (
@@ -111,14 +111,14 @@ function EditorialBody({ detail }) {
   return (
     <>
       {detail.screenshot && (
-        <div className="relative aspect-video mt-10 max-w-2xl">
-          <Image
-            src={detail.screenshot.src}
-            alt={detail.screenshot.alt}
-            fill
-            className="object-cover"
-          />
-        </div>
+        <Image
+          src={detail.screenshot.src}
+          alt={detail.screenshot.alt}
+          width={0}
+          height={0}
+          sizes="(min-width: 640px) 42rem, 100vw"
+          className="w-full h-auto max-w-2xl mt-10 border border-white/10"
+        />
       )}
       <p className="text-muted leading-relaxed mt-8 max-w-2xl">{detail.role}</p>
       <p className="text-text border-l-2 border-accent pl-4 mt-6 max-w-xl">
