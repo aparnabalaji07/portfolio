@@ -3,77 +3,100 @@ import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
 import { projects } from "@/data/projects";
 
-const statusStyles = {
-  live: "bg-[#aee8ab]/[0.1] text-[#aee8ab] border border-[#aee8ab]/20",
-  "in progress":
-    "bg-amber-500/[0.07] text-amber-200 border border-amber-500/[0.12]",
-  "coming soon": "bg-zinc-700/20 text-zinc-300 border border-zinc-700/40",
+const statusDot = {
+  live: "bg-[#aee8ab]",
+  "in progress": "bg-amber-300",
 };
 
+function kindLine(project) {
+  if (project.kind === "data") {
+    return "walk-forward backtest, no look-ahead";
+  }
+  return null;
+}
 
 export default function Projects() {
   return (
     <section id="projects" className="py-24">
       <Container>
         <FadeIn>
-          <p className="text-accent text-sm uppercase tracking-widest mb-4">
-            projects
+          <h2 className="text-text text-4xl md:text-5xl font-medium">
+            What I&apos;ve been building
+          </h2>
+          <p className="text-muted text-lg mt-4 max-w-xl">
+            Four projects, spanning trading systems, embedded hardware, and a
+            couple of web apps.
           </p>
         </FadeIn>
-        <FadeIn delay={0.1}>
-          <h2 className="text-text text-4xl md:text-5xl font-medium mb-12">
-            Things I have built!
-          </h2>
-        </FadeIn>
-        <div className="flex flex-col gap-6">
-          {projects.map((project, i) => (
-            <FadeIn key={project.title} delay={0.1 + i * 0.1}>
-              <div className="border border-white/10 rounded-2xl p-6 md:p-8 bg-surface">
-                <div className="flex items-start justify-between gap-4 flex-wrap mb-3">
+
+        <div className="mt-14 border-t border-white/10">
+          {projects.map((project) => (
+            <div
+              key={project.slug}
+              className="border-b border-white/10 py-10 transition-colors hover:bg-white/2"
+            >
+              <div className="flex flex-col md:flex-row md:justify-between gap-6">
+                <div className="md:w-64 shrink-0">
                   <h3 className="text-text text-xl font-medium">
                     <Link
                       href={`/projects/${project.slug}`}
-                      className="hover:text-accent transition-colors duration-200"
+                      className="hover:text-accent transition-colors"
                     >
                       {project.title}
                     </Link>
                   </h3>
-                  <span
-                    className={`text-xs px-3 py-1 rounded-full font-medium ${statusStyles[project.status]}`}
-                  >
-                    {project.status}
-                  </span>
+                  <div className="flex items-center gap-2 mt-2">
+                    <span
+                      className={`h-1.5 w-1.5 rounded-full ${statusDot[project.status]}`}
+                    />
+                    <span className="text-muted text-xs font-mono">
+                      {project.status}
+                    </span>
+                  </div>
+                  <p className="text-muted text-xs font-mono mt-1">
+                    {project.dateRange}
+                  </p>
                 </div>
-                <p className="text-muted text-base leading-relaxed mb-4">
-                  {project.description}
-                </p>
-                <p className="text-sm text-accent-light mb-5">
-                  {project.tech.join(" · ")}
-                </p>
-                <div className="flex gap-4 -ml-2">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-accent px-2 py-1 rounded-md transition-colors duration-200 hover:bg-accent/10 hover:text-white"
-                    >
-                      GitHub
-                    </a>
+
+                <div className="flex-1">
+                  <p className="text-muted text-base leading-relaxed max-w-xl">
+                    {project.description}
+                  </p>
+                  {kindLine(project) && (
+                    <p className="text-accent-light text-xs font-mono mt-3">
+                      {kindLine(project)}
+                    </p>
                   )}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-accent px-2 py-1 rounded-md transition-colors duration-200 hover:bg-accent/10 hover:text-white"
-                    >
-                      Live Demo
-                    </a>
+                  <p className="text-muted text-xs font-mono mt-3">
+                    {project.tech.join(", ")}
+                  </p>
+                  {(project.demo || project.github) && (
+                    <div className="flex gap-6 mt-4">
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-accent hover:text-accent-light transition-colors underline underline-offset-4 decoration-accent/30"
+                        >
+                          live demo
+                        </a>
+                      )}
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-muted hover:text-text transition-colors underline underline-offset-4 decoration-white/20"
+                        >
+                          github
+                        </a>
+                      )}
+                    </div>
                   )}
                 </div>
               </div>
-            </FadeIn>
+            </div>
           ))}
         </div>
       </Container>
