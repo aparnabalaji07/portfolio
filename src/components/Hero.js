@@ -1,11 +1,13 @@
 "use client";
 import Starfield from "@/components/Starfield";
+import Spiral from "@/components/Spiral";
 import Typewriter from "@/components/Typewriter";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center">
+    <section className="min-h-screen flex flex-col justify-center overflow-hidden">
       <Starfield />
+      <Spiral />
       <div className="px-6 md:px-12 max-w-4xl relative z-10">
         <h1 className="text-text text-5xl sm:text-6xl md:text-8xl font-medium">
           Aparna Balaji
