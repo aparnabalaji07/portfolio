@@ -75,7 +75,7 @@ export default async function ProjectPage({ params }) {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-accent text-bg px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+                  className="bg-accent text-bg px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
                 >
                   visit the live site
                 </a>
