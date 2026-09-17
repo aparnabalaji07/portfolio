@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -13,14 +14,16 @@ export default function Nav() {
   }, []);
 
   return (
-    <div className="fixed top-4 inset-x-4 md:inset-x-8 z-50 flex justify-center">
-      <nav
-        className={`w-full max-w-5xl flex items-center justify-between h-14 px-6 rounded-full border transition-colors duration-300 ${
-          scrolled
-            ? "bg-bg/90 backdrop-blur-md border-white/10"
-            : "bg-bg/40 backdrop-blur-md border-white/5"
-        }`}
-      >
+    <motion.nav
+      animate={{ height: scrolled ? 56 : 80 }}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+      className={`fixed top-0 inset-x-0 z-50 border-b transition-colors duration-300 ${
+        scrolled
+          ? "bg-bg/90 backdrop-blur-md border-white/10"
+          : "bg-transparent border-white/5"
+      }`}
+    >
+      <div className="max-w-5xl mx-auto px-6 h-full flex items-center justify-between">
         <a
           href="#"
           className="text-text text-lg font-medium outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
@@ -102,7 +105,7 @@ export default function Nav() {
             </a>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </motion.nav>
   );
 }
