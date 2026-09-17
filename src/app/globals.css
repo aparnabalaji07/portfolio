@@ -3,15 +3,30 @@
 :root {
   --background: #120f0e;
   --foreground: #f1ebe7;
+  --surface: #1c1917;
+  --accent: #e8849b;
+  --accent-light: #ec9eb5;
+  --muted: #a89d95;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --background: #faf6f2;
+  --foreground: #1f1a17;
+  --surface: #f0e8e1;
+  --accent: #c9436f;
+  --accent-light: #a8355c;
+  --muted: #6f645b;
+  color-scheme: light;
 }
 
 @theme inline {
-  --color-bg: #1b1613;
-  --color-surface: #1c1917;
-  --color-text: #f1ebe7;
-  --color-accent: #e8849b;
-  --color-accent-light: #ec9eb5;
-  --color-muted: #a89d95;
+  --color-bg: var(--background);
+  --color-surface: var(--surface);
+  --color-text: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-muted: var(--muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -20,4 +35,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
