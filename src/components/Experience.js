@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
+import ClickableImage from "@/components/ClickableImage";
 import { experience } from "@/data/experience";
 
 export default function Experience() {
@@ -66,11 +66,12 @@ export default function Experience() {
                             key={image.src}
                             className="relative h-24 w-32 shrink-0 overflow-hidden"
                           >
-                            <Image
+                            <ClickableImage
                               src={image.src}
                               alt={image.alt}
                               fill
-                              className="object-cover transition-transform duration-300 hover:scale-105"
+                              sizes="128px"
+                              imgClassName="object-cover transition-transform duration-300 hover:scale-105"
                             />
                           </div>
                         ))}
