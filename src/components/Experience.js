@@ -46,7 +46,7 @@ export default function Experience() {
                     {job.description.map((paragraph, i) => (
                       <p
                         key={i}
-                        className={`text-muted text-base leading-relaxed max-w-xl ${
+                        className={`text-muted text-base leading-relaxed ${
                           i > 0 ? "mt-4" : ""
                         }`}
                       >

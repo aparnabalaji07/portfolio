@@ -59,7 +59,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex-1">
-                  <p className="text-muted text-base leading-relaxed max-w-xl">
+                  <p className="text-muted text-base leading-relaxed">
                     {project.description}
                   </p>
                   {kindLine(project) && (
