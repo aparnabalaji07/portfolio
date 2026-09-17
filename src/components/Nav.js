@@ -24,7 +24,7 @@ export default function Nav() {
           : "bg-transparent border-text/5"
       }`}
     >
-      <div className="max-w-5xl mx-auto px-6 h-full flex items-center justify-between">
+      <div className="px-6 md:px-12 h-full flex items-center justify-between">
         <a
           href="#"
           className="flex items-center gap-2 text-text text-lg font-medium outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
