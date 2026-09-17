@@ -10,7 +10,9 @@ export default function Contact() {
             Contact
           </h2>
           <p className="text-muted text-lg mt-4 max-w-xl">
-            I am glad to hear from you about any of this.
+            I am excited to hear about new opportunities and collaborations.
+            Please reach out if you would like to work together or just want to
+            say hi!
           </p>
 
           <div className="flex flex-wrap items-center gap-6 mt-10">
