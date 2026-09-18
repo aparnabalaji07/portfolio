@@ -3,7 +3,10 @@ import FadeIn from "@/components/FadeIn";
 
 export default function Contact() {
   return (
-    <section id="contact" className="pt-12 pb-24">
+    <section
+      id="contact"
+      className="pt-12 pb-24 min-h-80 flex flex-col justify-center items-center"
+    >
       <Container>
         <FadeIn>
           <div className="max-w-md mx-auto text-center">
@@ -11,9 +14,9 @@ export default function Contact() {
               Contact
             </h2>
             <p className="text-muted text-lg mt-4">
-              I am excited to hear about new opportunities and
-              collaborations. Please reach out if you would like to work
-              together or just want to say hi!
+              I am excited to hear about new opportunities and collaborations.
+              Please reach out if you would like to work together or just want
+              to say hi!
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
