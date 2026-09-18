@@ -65,7 +65,19 @@ export default async function ProjectPage({ params }) {
           {project.detail.intro}
         </p>
 
+        {project.kind !== "hardware" && project.detail.note && (
+          <p className="text-muted text-lg mt-4 max-w-2xl leading-relaxed">
+            {project.detail.note}
+          </p>
+        )}
+
         <ProjectBody project={project} />
+
+        {project.detail.future && (
+          <p className="text-muted text-lg mt-8 max-w-2xl leading-relaxed">
+            {project.detail.future}
+          </p>
+        )}
 
         {(project.demo || project.github) && (
           <div className="flex flex-wrap items-center gap-6 mt-12">

@@ -11,8 +11,8 @@ export default function Research() {
             Research
           </h2>
           <p className="text-muted text-lg mt-4 max-w-xl">
-            Two papers I co-authored on amateur astronomy, measuring binary
-            star separations.
+            Two papers I co-authored on amateur astronomy, measuring binary star
+            separations.
           </p>
         </FadeIn>
 

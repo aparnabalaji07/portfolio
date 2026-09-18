@@ -6,14 +6,14 @@ export const projects = [
     status: "in progress",
     dateRange: "Sept 2026 – present",
     description:
-      "A backtesting engine I built from scratch to test trading strategies against historical data, with a guard against look-ahead bias.",
-    tech: ["Python", "pandas"],
+      "A backtesting engine I am building from scratch to test trading strategies against historical data, with a guard against look-ahead bias.",
+    tech: ["Python"],
     github: "https://github.com/aparnabalaji07/market-simulator",
     demo: null,
     thumbnail: null,
     detail: {
       intro:
-        "I wanted to know if the trading strategies people talk about online actually hold up, so I built the infrastructure to test them properly instead of taking anyone's word for it. That meant writing my own portfolio tracker, order logic, and P&L accounting before I could even get to the strategies themselves.",
+        "This year, I began my personal finance journey. I was immediately bombarded with information about trading strategies, what kinds of portolio to open, the best ETFs to invest in, and more trading content. I wanted to know if the trading strategies people talk about online actually hold up. To do this, I built the infrastructure to test their strategies properly instead of taking anyone's word for it. That meant writing my own portfolio tracker, order logic, and P&L accounting before I could even get to the strategies themselves. This project is currently helping me figure out where to invest my own money for the future.",
       mechanics: [
         {
           term: "Portfolio tracking",
@@ -54,8 +54,8 @@ export const projects = [
       alt: "The Adoption Bio Generator form",
     },
     detail: {
-      intro:
-        "I built both the frontend and backend myself as a self-directed project to get real, end-to-end experience integrating an LLM API into a product rather than just calling it from a script.",
+      intro: `I love animals and got my cat from a shelter. I have volunteered at local shelters in the past, and most shelters write their pets biography for adoption one at a time. I wanted to build a tool that could help speed up this process. Most volunteers make notes of a pets temperments, needs, and behaviors while taking care of them. Having the shelter volunteers or staff fill in these fields, a REST API creates a short adoption bio to put on a flyer or website.`,
+      note: `I built both the frontend and backend myself as a self-directed project to get real, end-to-end experience integrating an LLM API into a product rather than just calling it from a script.`,
       steps: [
         {
           label: "Input",
@@ -77,6 +77,8 @@ export const projects = [
         src: "/images/projects/AdoptionBioGenerator.png",
         alt: "The Adoption Bio Generator form, with fields for name, species, age, and notes",
       },
+      future:
+        "I am currently in the process of contacting to shelters to use my tool. After I get a few shelters to use it, I will add an authentication feature as well as a database to store the bios for each pet.",
     },
   },
   {
@@ -96,7 +98,7 @@ export const projects = [
     },
     detail: {
       intro:
-        "This project is entirely hardware and firmware, with no web component. I wanted to understand what it actually takes to make a microcontroller function as a reliable camera, one that captures multiple images in a session and stores each one correctly rather than working only once.",
+        "I began to get interested in photography. Soon, I started to wonder how a camera worked and processed images. I decided the best way to learn about cameras was to build one. This project is entirely hardware and firmware, with no web component. I wanted to understand what it actually takes to make a microcontroller function as a reliable camera, one that captures multiple images in a session and stores each one correctly rather than working only once.",
       specs: [
         { label: "Board", value: "ESP32" },
         { label: "Image sensor", value: "OV2640" },

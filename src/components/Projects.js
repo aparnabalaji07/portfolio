@@ -35,18 +35,20 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.slug}
-              className="relative border-b border-text/10 py-10 before:content-[''] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-accent before:opacity-0 before:transition-opacity hover:before:opacity-100 after:content-[''] after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-accent after:opacity-0 after:transition-opacity hover:after:opacity-100"
+              className="group relative border-b border-text/10 py-10 cursor-pointer before:content-[''] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-accent before:opacity-0 before:transition-opacity hover:before:opacity-100 after:content-[''] after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-accent after:opacity-0 after:transition-opacity hover:after:opacity-100"
             >
+              <Link
+                href={`/projects/${project.slug}`}
+                className="absolute inset-0 z-0 outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
+                aria-label={project.title}
+              />
               <FadeIn>
                 <div className="flex flex-col md:flex-row md:justify-between gap-6">
                   <div className="md:w-64 shrink-0">
-                    <h3 className="text-text text-xl font-medium">
-                      <Link
-                        href={`/projects/${project.slug}`}
-                        className="hover:text-accent transition-colors outline-none focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4 rounded-sm"
-                      >
+                    <h3 className="text-text text-xl font-medium relative z-10 pointer-events-none">
+                      <span className="transition-colors group-hover:text-accent">
                         {project.title}
-                      </Link>
+                      </span>
                     </h3>
                     <div className="flex items-center gap-2 mt-2">
                       <span
@@ -74,7 +76,7 @@ export default function Projects() {
                       {project.tech.join(", ")}
                     </p>
                     {(project.demo || project.github) && (
-                      <div className="flex gap-6 mt-4">
+                      <div className="relative z-10 flex gap-6 mt-4">
                         {project.demo && (
                           <a
                             href={project.demo}
@@ -100,7 +102,7 @@ export default function Projects() {
                   </div>
 
                   {project.thumbnail && (
-                    <div className="relative h-24 w-32 shrink-0 overflow-hidden">
+                    <div className="relative z-10 h-24 w-32 shrink-0 overflow-hidden">
                       <ClickableImage
                         src={project.thumbnail.src}
                         alt={project.thumbnail.alt}
