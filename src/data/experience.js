@@ -31,7 +31,7 @@ export const experience = [
   {
     role: "First Year Coordinator",
     org: "IEEE uOttawa Student Branch",
-    dateRange: "Sept 2025 – Jul 2026",
+    dateRange: "Sept 2025 – May 2026",
     location: "Ottawa, ON",
     description: [
       "As First Year Coordinator for IEEE uOttawa, I helped organize events and initiatives that welcomed new students to the engineering and computer science community. I worked with the executive team to make sure first year students felt supported, informed, and connected through workshops, socials, and mentorship opportunities.",
