@@ -62,6 +62,40 @@ export const projects = [
     },
   },
   {
+    slug: "ai-skill-gap-analyzer",
+    title: "AI Skill Gap Analyzer",
+    kind: "data",
+    status: "in progress",
+    dateRange: "Sept 2026 – present",
+    description:
+      "An IEEE UTD project that uses an LLM API to pull skills out of job postings as structured JSON, then processes the results with pandas.",
+    tech: ["Python", "LLM API", "pandas"],
+    github: "https://github.com/ieee-utd/cis-skill-gap-analyzer",
+    demo: null,
+    thumbnail: null,
+    detail: {
+      intro:
+        "This is a project I lead through IEEE UTD. The tool reads job postings and pulls out the skills that each one asks for, then turns those results into data we can work with in Python.",
+      mechanics: [
+        {
+          term: "Skill extraction",
+          detail:
+            "Each job posting is sent to an LLM API, which returns the skills it mentions.",
+        },
+        {
+          term: "Structured JSON",
+          detail:
+            "The LLM returns its answer as structured JSON instead of free text, so every result has the same shape.",
+        },
+        {
+          term: "pandas processing",
+          detail:
+            "The JSON results are loaded into pandas and processed together as one dataset.",
+        },
+      ],
+    },
+  },
+  {
     slug: "market-trading-simulator",
     title: "Market Trading Simulator",
     kind: "data",
