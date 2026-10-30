@@ -17,9 +17,19 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
   if (!project) return {};
+  const url = `https://aparnabalaji.vercel.app/projects/${project.slug}`;
   return {
-    title: `${project.title} | Aparna Balaji`,
+    title: project.title,
     description: project.description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${project.title} | Aparna Balaji`,
+      description: project.description,
+      url,
+      type: "article",
+    },
   };
 }
 
