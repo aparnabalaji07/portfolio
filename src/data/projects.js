@@ -38,6 +38,30 @@ export const projects = [
     },
   },
   {
+    slug: "janta-power-solar-tracker",
+    title: "Janta Power Solar Tracker",
+    kind: "hardware",
+    status: "in progress",
+    dateRange: "Sept 2026 – present",
+    description:
+      "An industry-sponsored sun-position sensor for Janta Power solar towers that reads three photodiodes on an ESP32 and publishes sun-angle data to AWS S3.",
+    tech: ["ESP32", "C++", "AWS S3"],
+    github: null,
+    demo: null,
+    thumbnail: null,
+    detail: {
+      intro:
+        "Janta Power sponsored this project through Comet Robotics. We are building a sensor for their solar towers that measures the position of the sun and sends that data to the cloud. I designed the circuit schematic and built the bill of materials, which meant picking each of the components for the design.",
+      specs: [
+        { label: "Board", value: "ESP32" },
+        { label: "Sensors", value: "3 photodiodes" },
+        { label: "Data storage", value: "AWS S3" },
+        { label: "Firmware", value: "C++" },
+      ],
+      note: "The design reads three photodiodes on the ESP32 and publishes sun-angle data to AWS S3. On the software side, I also write the sun position calculations.",
+    },
+  },
+  {
     slug: "market-trading-simulator",
     title: "Market Trading Simulator",
     kind: "data",
