@@ -4,8 +4,11 @@ export const experience = [
     org: "IEEE UTD",
     dateRange: "Sept 2026 – present",
     location: "Dallas, TX",
-    description: null,
-    skills: [],
+    description: [
+      "As a Project Supervisor for IEEE UTD, I lead the team building the AI Skill Gap Analyzer, a tool that pulls the skills out of job postings.",
+      "When I put the team together, I paired upper-year students with freshmen as mentors, so each freshman had someone more experienced to learn from while working on the project.",
+    ],
+    skills: ["Team Leadership", "Mentorship"],
     images: [],
   },
   {
