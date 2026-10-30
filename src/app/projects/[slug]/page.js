@@ -50,7 +50,7 @@ export default async function ProjectPage({ params }) {
           ← back to projects
         </Link>
 
-        <h1 className="text-text text-4xl md:text-6xl font-medium mt-6 max-w-3xl">
+        <h1 className="text-text text-4xl md:text-6xl font-medium mt-6">
           {project.title}
         </h1>
 
@@ -71,12 +71,12 @@ export default async function ProjectPage({ params }) {
           </span>
         </div>
 
-        <p className="text-muted text-lg mt-8 max-w-2xl leading-relaxed">
+        <p className="text-muted text-lg mt-8 leading-relaxed">
           {project.detail.intro}
         </p>
 
         {project.kind !== "hardware" && project.detail.note && (
-          <p className="text-muted text-lg mt-4 max-w-2xl leading-relaxed">
+          <p className="text-muted text-lg mt-4 leading-relaxed">
             {project.detail.note}
           </p>
         )}
@@ -84,7 +84,7 @@ export default async function ProjectPage({ params }) {
         <ProjectBody project={project} />
 
         {project.detail.future && (
-          <p className="text-muted text-lg mt-8 max-w-2xl leading-relaxed">
+          <p className="text-muted text-lg mt-8 leading-relaxed">
             {project.detail.future}
           </p>
         )}

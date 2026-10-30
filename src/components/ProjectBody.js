@@ -2,7 +2,7 @@ import ClickableImage from "@/components/ClickableImage";
 
 function DataBody({ detail }) {
   return (
-    <dl className="mt-10 border-t border-text/10 font-mono text-sm max-w-2xl">
+    <dl className="mt-10 border-t border-text/10 font-mono text-sm">
       {detail.mechanics.map((m) => (
         <div
           key={m.term}
@@ -19,7 +19,7 @@ function DataBody({ detail }) {
 function HardwareBody({ detail }) {
   return (
     <>
-      <div className="mt-10 grid grid-cols-2 border-t border-l border-text/10 max-w-2xl">
+      <div className="mt-10 grid grid-cols-2 border-t border-l border-text/10">
         {detail.specs.map((s) => (
           <div key={s.label} className="border-r border-b border-text/10 p-5">
             <p className="text-muted text-xs font-mono">{s.label}</p>
@@ -27,17 +27,17 @@ function HardwareBody({ detail }) {
           </div>
         ))}
       </div>
-      <p className="text-muted leading-relaxed mt-8 max-w-2xl">{detail.note}</p>
+      <p className="text-muted leading-relaxed mt-8">{detail.note}</p>
 
       {detail.buildPhotos && (
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {detail.buildPhotos.map((photo) => (
             <div key={photo.src} className="relative aspect-4/3 overflow-hidden">
               <ClickableImage
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                sizes="(min-width: 640px) 20rem, 100vw"
+                sizes="(min-width: 640px) 31rem, 100vw"
                 imgClassName="object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
@@ -46,7 +46,7 @@ function HardwareBody({ detail }) {
       )}
 
       {detail.cameraRoll && (
-        <div className="mt-10 max-w-2xl">
+        <div className="mt-10">
           <p className="text-muted text-sm">
             Photos actually taken by the camera, in order.
           </p>
@@ -58,7 +58,7 @@ function HardwareBody({ detail }) {
                     src={shot.src}
                     alt={shot.caption}
                     fill
-                    sizes="(min-width: 640px) 13rem, 33vw"
+                    sizes="(min-width: 640px) 21rem, 33vw"
                     imgClassName="object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -81,12 +81,12 @@ function StepsBody({ detail }) {
         <ClickableImage
           src={detail.screenshot.src}
           alt={detail.screenshot.alt}
-          sizes="(min-width: 640px) 42rem, 100vw"
-          wrapperClassName="w-full max-w-2xl mt-10"
+          sizes="(min-width: 640px) 64rem, 100vw"
+          wrapperClassName="w-full mt-10"
           imgClassName="w-full h-auto border border-text/10"
         />
       )}
-      <div className="mt-10 flex flex-col md:flex-row md:items-start gap-8 md:gap-0 max-w-2xl">
+      <div className="mt-10 flex flex-col md:flex-row md:items-start gap-8 md:gap-0">
         {detail.steps.map((step, i) => (
           <div
             key={step.label}
@@ -115,13 +115,13 @@ function EditorialBody({ detail }) {
         <ClickableImage
           src={detail.screenshot.src}
           alt={detail.screenshot.alt}
-          sizes="(min-width: 640px) 42rem, 100vw"
-          wrapperClassName="w-full max-w-2xl mt-10"
+          sizes="(min-width: 640px) 64rem, 100vw"
+          wrapperClassName="w-full mt-10"
           imgClassName="w-full h-auto border border-text/10"
         />
       )}
-      <p className="text-muted leading-relaxed mt-8 max-w-2xl">{detail.role}</p>
-      <p className="text-text border-l-2 border-accent pl-4 mt-6 max-w-xl">
+      <p className="text-muted leading-relaxed mt-8">{detail.role}</p>
+      <p className="text-text border-l-2 border-accent pl-4 mt-6">
         {detail.outcome}
       </p>
     </>
