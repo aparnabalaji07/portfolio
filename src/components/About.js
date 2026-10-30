@@ -19,9 +19,10 @@ export default function About() {
             run an Arduino workshop that won an IEEE award, and co-authored two
             papers on measuring the separation of binary star systems as a side
             interest in amateur astronomy. Everything below is something I built
-            because I was interested in the subject, not because it was assigned. I
-            have built a backtesting engine, a digital camera controlled by a
-            microcontroller, and am looking forward to what I will build next.
+            because I was interested in the subject, not because it was
+            assigned. I have built a backtesting engine, a digital camera
+            controlled by a microcontroller, and am looking forward to what I
+            will build next.
           </p>
           <p className="text-muted text-lg mt-8 max-w-2xl leading-relaxed">
             I am a woman of color in computer science, and I have been doubted
@@ -29,7 +30,7 @@ export default function About() {
             attention to who gets left out and made sure I do not do the same.
           </p>
           <p className="text-text font-mono text-sm mt-8">
-            Ottawa, ON / Dallas, TX
+            Dallas, TX / Ottawa, ON
           </p>
           <p className="text-text font-mono text-sm mt-1">
             open to relocating anywhere in the US
