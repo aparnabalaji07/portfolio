@@ -1,5 +1,43 @@
 export const projects = [
   {
+    slug: "planet-or-binary",
+    title: "Planet or Binary",
+    kind: "data",
+    status: "in progress",
+    dateRange: "Oct 2026 – present",
+    description:
+      "An ML classifier I am building to sort TESS transit signals into real exoplanets and eclipsing binaries, with an accuracy study and false positive checks.",
+    tech: ["Python"],
+    github: "https://github.com/aparnabalaji07/planet-or-binary",
+    demo: null,
+    thumbnail: null,
+    detail: {
+      intro:
+        "This project uses transit data from TESS, the NASA telescope that searches for planets around other stars. When a planet passes in front of its star, the star gets a little dimmer. An eclipsing binary, where two stars pass in front of each other, can make a dip that looks very similar. I am building a classifier that sorts these transit signals into real exoplanets and eclipsing binaries.",
+      mechanics: [
+        {
+          term: "Classifier",
+          detail:
+            "A machine learning model that takes a TESS transit signal and labels it as either a real exoplanet or an eclipsing binary.",
+        },
+        {
+          term: "Accuracy study",
+          detail:
+            "Testing how often the classifier gets the label right, so I know how much to trust its results.",
+        },
+        {
+          term: "False positive checks",
+          detail:
+            "Checks for signals that the classifier calls a planet when they are not actually a planet.",
+        },
+        {
+          term: "Web app",
+          detail: "A Streamlit web app is planned as the final milestone.",
+        },
+      ],
+    },
+  },
+  {
     slug: "market-trading-simulator",
     title: "Market Trading Simulator",
     kind: "data",
