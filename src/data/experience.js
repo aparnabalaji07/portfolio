@@ -12,6 +12,23 @@ export const experience = [
     images: [],
   },
   {
+    role: "Embedded Team Lead",
+    org: "Comet Robotics, Corporate Projects",
+    dateRange: "Sept 2026 – present",
+    location: "Richardson, TX",
+    description: [
+      "As Embedded Team Lead for the Janta Power Solar Tracker, an industry-sponsored project through Comet Robotics, I lead 8 engineers across the hardware and software subteams.",
+      "I own the project timeline and budget, and I sign off on design decisions ahead of our November 30 deadline. I also report to Janta Power every week on our progress.",
+    ],
+    skills: [
+      "Team Leadership",
+      "Circuit Design",
+      "Budgeting",
+      "Embedded C++",
+    ],
+    images: [],
+  },
+  {
     role: "First Year Coordinator",
     org: "IEEE uOttawa Student Branch",
     dateRange: "Sept 2025 – Jul 2026",
