@@ -7,6 +7,7 @@ export const projects = [
     dateRange: "Sept 2026 – present",
     description:
       "A backtesting engine I am building from scratch to test trading strategies against historical data, with a guard against look-ahead bias.",
+    tagline: "walk-forward backtest, no look-ahead",
     tech: ["Python"],
     github: "https://github.com/aparnabalaji07/market-simulator",
     demo: null,

@@ -10,10 +10,7 @@ const statusDot = {
 };
 
 function kindLine(project) {
-  if (project.kind === "data") {
-    return "walk-forward backtest, no look-ahead";
-  }
-  return null;
+  return project.tagline ?? null;
 }
 
 export default function Projects() {
