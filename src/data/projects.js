@@ -102,7 +102,7 @@ export const projects = [
     status: "in progress",
     dateRange: "Sept 2026 – present",
     description:
-      "A backtesting engine I am building from scratch to test trading strategies against historical data, with a guard against look-ahead bias.",
+      "A backtesting engine I am building from scratch to test momentum and mean-reversion strategies against historical data. It has buy and sell logic with portfolio tracking and realized versus unrealized P&L. Strategies run through a walk-forward loop with a look-ahead guard.",
     tagline: "walk-forward backtest, no look-ahead",
     tech: ["Python"],
     github: "https://github.com/aparnabalaji07/market-simulator",
@@ -133,6 +133,8 @@ export const projects = [
             "Momentum and mean-reversion, coded and run against historical price data.",
         },
       ],
+      future:
+        "Next, I am extending it into an agent-based market simulator with learning agents in PyTorch.",
     },
   },
   {
